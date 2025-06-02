@@ -22,7 +22,11 @@ jobs:
         run: flutter build apk --release
 
       - name: Upload APK
-        uses: actions/upload-artifact@8c7f1f17a1116837cd3513943190f0107f780f32
+        uses: - name: Upload APK
+  uses: actions/upload-artifact@v2
+  with:
+    name: app-release
+    path: build/app/outputs/flutter-apk/app-release.apk
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
