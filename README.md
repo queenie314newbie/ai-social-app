@@ -1,1 +1,1 @@
-# ai-social-app
+Through the eyes of ai
